@@ -1,0 +1,67 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+header {
+    height: 5%;
+    background-color: #272b72;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+button.logoutBtn {
+    background-color: #272b72;
+    /* Match the header color */
+    color: white;
+    /* White text color */
+    padding: 10px 15px;
+    /* Padding around the text */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Add some border radius for a rounded look */
+    cursor: pointer;
+    /* Add a pointer cursor on hover */
+}
+
+button.logoutBtn:hover {
+    background-color: #1d215a;
+    /* Darker color on hover */
+}
+
+iframe.mainPage {
+    height: 95%;
+    /* The remaining height after considering the header height */
+    width: 100vw;
+    border: none;
+    display: block;
+}
+
+iframe.result {
+    height: 54%;
+    /* The remaining height after considering the header height */
+    width: 100vw;
+    border: none;
+    display: block;
+    overflow: hidden;
+}
+
+.content {
+    padding: 40px;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}
